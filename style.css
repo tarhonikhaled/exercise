@@ -1,0 +1,162 @@
+.top {
+    height: 800px;
+    background-image: url('cover\(2\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top .grid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+.top .grid .left {
+    height: 600px;
+    background-color: #122333;
+    border-radius: 5px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.top .grid .right {
+    border-radius: 5px;
+    height: 300px;
+}
+
+.top .left .head {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.top .left .head::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+}
+
+.top .left .head h3 {
+    font-size: 5rem;
+    margin: 10px;
+}
+
+.top .left ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.top .left ul li {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.top .left ul li::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    margin-right: 10px;
+    color: green;
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: orangered;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.top .right p {
+    font-size: 2rem;
+    border: 3px solid orangered;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.middle {
+    height: 500px;
+    margin-top: 50px;
+}
+
+.middle .grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    padding: 0 20px;
+}
+
+.middle .grid .card {
+    background-color: #f2f8fa;
+    border-radius: 2px;
+    padding: 15px;
+    height: 100%;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card .num h3 {
+    font-size: 3rem;
+    color: orangered;
+    margin: 20px 0 10px;
+}
+
+.card .title {
+    font-size: 3rem;
+    color: #122333;
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+
+.card .content {
+    margin-top: 20px;
+    width: 50%;
+    line-height: 2;
+}
+
+.card .more {
+    text-decoration: none;
+    color: orangered;
+}
+
+.bottom {
+    height: 500px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.bottom .img {
+    background-image: url('street.jpg');
+}
+
+.bottom .title {
+    font-size: 2rem;
+    position: relative;
+}
+
+.bottom .title::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom .title h4 {
+    margin: 0;
+}
+
+.bottom .text p {
+    font-size: 20px;
+    line-height: 2;
+}
