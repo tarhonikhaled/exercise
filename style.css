@@ -10,6 +10,7 @@
     grid-template-columns: 45% 45%;
     column-gap: 50px;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .top .grid .left {
@@ -23,6 +24,7 @@
 .top .grid .right {
     border-radius: 5px;
     height: 300px;
+    border: 3px solid orangered;
 }
 
 .top .left .head {
@@ -71,9 +73,8 @@
 
 .top .right p {
     font-size: 2rem;
-    border: 3px solid orangered;
-    padding: 20px;
     line-height: 1.5;
+    margin: 0;
 }
 
 p {
